@@ -6,6 +6,10 @@ var app = new Vue ({
     description: "A pair of warm, fuzzy socks",
     image: "./images/socks-white.jpeg",
     altText: "A pair of socks",
-    linkToShop: "https://rozetka.com.ua/the_pair_of_socks_roz6400000454/p208142947/"
+    linkToShop: "https://rozetka.com.ua/the_pair_of_socks_roz6400000454/p208142947/",
+    inStock: true,
+    onSale: true,
+    inventory: 100,
+    size: 40
   }
 });
