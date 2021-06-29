@@ -48,3 +48,19 @@ h1 {
   text-align: center;
   color: #b4825a;
 }
+
+.details {
+  padding-left: 0px;
+}
+
+.field-color .item {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.field-color {
+  width: fit-content;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 0px;
+}

@@ -30,8 +30,21 @@
           </div>
           <div class="size" v-show="size">40 size</div>
           <div class="sale" v-show="onSale">Hurry Up, it's on Sale now!</div>
+          <ul class="details">
+            <li v-for="detail in details">{{ detail }}</li>
+          </ul>
         </div>
       </a>
+    </div>
+
+    <h3 class=field-name"">Available varians of colors</h3>
+    <div class="field-color color-box" v-for="variant in variants" :key="variant.variantId"
+      :style="{backgroundColor: variant.variantColor}" @mouseover="updateProduct(variant.variantImage)">
+      - {{variant.variantColor}}
+    </div>
+    <button v-on:click="addToCart" :disabled="!inStock" :class="{disabledButton: !inStock}">Add to cart</button>
+    <div class="cart">
+      <p>Cart ({{cart}})</p>
     </div>
   </div>
 
